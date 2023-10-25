@@ -1,0 +1,119 @@
+[VERSION]
+APIVERSION=(100)
+VERSION=(2,9,4,37)
+[FRAME]
+PLACEMENT=(44,2,3,-1,-1,-1,-1,130,130,1282,717)
+FRAME DATA=(1,1,0,0)
+[FRAME DATA]
+1=(44,0,1,-1,-1,-8,-31,0,0,769,259)
+2=(44,0,1,-1,-1,-8,-31,26,26,795,285)
+3=(44,0,1,-1,-1,-8,-31,182,182,1273,608)
+4=(44,0,1,-1,-1,-8,-31,0,0,1091,426)
+5=(44,0,1,-1,-1,-8,-31,78,78,1169,504)
+6=(44,0,1,-1,-1,-8,-31,130,130,1221,556)
+7=(44,0,1,-1,-1,-8,-31,156,156,1247,582)
+8=(44,0,1,-1,-1,-8,-31,182,182,1273,608)
+9=(44,0,1,-1,-1,-8,-31,0,0,1091,426)
+10=(44,0,1,-1,-1,-8,-31,26,26,1117,452)
+11=(44,0,1,-1,-1,-8,-31,26,26,1117,452)
+12=(44,0,1,-1,-1,-8,-31,52,52,1143,478)
+13=(44,0,1,-1,-1,-8,-31,104,104,1195,530)
+14=(44,2,3,-1,-1,-8,-31,104,104,877,389)
+15=(44,0,1,-1,-1,-1,-1,0,23,255,634)
+16=(44,0,1,-1,-1,-1,-1,0,23,240,634)
+[Ladder Views]
+F1V1=(95,1,0,7,16,5,1,1,1,0,0)
+F2V1=(95,1,0,7,16,5,1,1,1,0,0)
+F3V1=(95,1,0,7,16,5,1,1,1,0,0)
+F4V1=(95,1,0,7,16,5,1,1,1,0,0)
+F5V1=(95,1,0,7,16,5,1,1,1,0,0)
+F6V1=(95,1,0,7,16,5,1,1,1,0,0)
+F7V1=(95,1,0,7,16,5,1,1,1,0,0)
+F8V1=(95,1,0,7,16,5,1,1,1,0,0)
+F9V1=(95,1,0,7,16,5,1,1,1,0,0)
+F10V1=(95,1,0,7,16,5,1,1,1,0,0)
+F11V1=(95,1,0,7,16,5,1,1,1,0,0)
+F12V1=(95,1,0,7,16,5,1,1,1,0,0)
+F13V1=(95,1,0,7,16,5,1,1,1,0,0)
+F14V1=(95,1,0,7,16,5,1,1,1,0,1)
+[Ladder Frame 1]
+Ladder View 1z=(0,0,732,216)
+ModuleSegment=8
+[FRAME TYPES]
+1=3
+2=3
+3=3
+4=3
+5=3
+6=3
+7=3
+8=3
+9=3
+10=3
+11=3
+12=3
+13=3
+14=3
+15=14
+16=25
+[Ladder Frame 2]
+Ladder View 1z=(0,0,732,216)
+ModuleSegment=7
+[Ladder Frame 3]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=12
+[Ladder Frame 4]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=13
+[Ladder Frame 5]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=9
+[Ladder Frame 6]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=22
+[Ladder Frame 7]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=23
+[Ladder Frame 8]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=24
+[Ladder Frame 9]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=21
+[Ladder Frame 10]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=11
+[Ladder Frame 11]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=14
+[Ladder Frame 12]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=10
+[Ladder Frame 13]
+Ladder View 1z=(0,0,1054,383)
+ModuleSegment=20
+[Ladder Frame 14]
+Ladder View 1z=(0,0,1008,604)
+ModuleSegment=6
+[TAB INFO]
+Tab0=3,$Main
+Tab1=3,VGR_Suction
+Tab2=3,VGR_Copy_State
+Tab3=3,SLD_Suction
+Tab4=3,SSC_Copy_State
+Tab5=3,HBW_Copy_State
+Tab6=3,MPO_Copy_State
+Tab7=3,MPO_Suction
+Tab8=3,HBW_Program
+Tab9=3,MPO_Program
+Tab10=3,SLD_Program
+Tab11=3,SSC_Program
+Tab12=3,VGR_Program
+Tab13=3,SLD_Copy_State
+[DOCKPANE TO FRAME XREF]
+Project Browser`6852=15
+Instruction Toolbox`4381=16
+[DISPLAY MODE]
+DoMDIRestore=0
+[SYSTEM NAME]
+System Name=HUNTER-PC

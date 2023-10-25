@@ -1,0 +1,664 @@
+// Options: Export entire program; Code Block delimiter instructions;
+// Formatted Rung Comments; Element Documentation Database; System Configuration;
+// Memory Configuration/Devices with User Add-Ons only; use Element names (no NickNames);
+// rung/address annotations; <SPACE> parameter delimiter; 
+// Write/overwrite file C:\Users\hunte\Desktop\school\Normal PLCs\ui_cda_mini_factory_fa23\fa23_plc.txt
+
+PLC BX-DM1E-36ER3-D
+
+// Do not modify SYS_CONFIG block!
+#BEGIN SYS_CONFIG
+f36971d0a0996b71a7eb0ee8f01ac3ef119e630e9d08f013865c2c31bba14bc66b7282c9a2dee989
+a15e83ad36b7012adad321343b2daba811824839331117d5700b631e272ac849ed6104a397081edf
+d3f15d0ba3eeca8b32045ea1f81f47314af9cfb1022423a681dd93a7463a7ce4a363f9f2f71a378e
+5baa5754516b870fc2f509e784fb9bdf78bc3095fd0a3b6374d6a96390ba933e2c39686b35404df4
+7795d4fcea0069f2b806646a567c4d6297877adf54bef17842f328e59e6a4180a61ab9e37015245d
+d7d711705ec3e6bd3f22e05a691c9a4468edca726e80cd18b74661ed5cd4a77dbbd514e4457aaacd
+b0dd6e8e3e39c11e2c19e8eef780b81adc0a98efaf19583a370558e3d25139059f046202d671cfc1
+41f234702215914fa65d24aac15e86bba4f8ef31e1045877f97eee9353233affe6446f5c000a32a7
+8cb1609d1a9a2b2cfe4394c082a6a7397e4fc3e4c4e990f872629c8975b7fd6a2b9db0ca474f0d45
+2e840359fddb5e91aeb0bbc2df063f70b1e4d1a4f959dd3cff5e1786d9bb32e95c63468d005e0dfa
+2c6e3006e64fdde4df4d9ad147557a598ee0933f24fa97760da45453bece5e22aa5c10e27b616f07
+4b255ba8f30c8cdfbb2c6af7541fdb985ff02d951041e1b9c80d6e8f10373ad6e5a414a4488a1aed
+5ed2828284bd4ff08ecc159a8520e7d9beb7adf8794ca7bb62bfea22f8c25868447d2ba29a034cff
+6fd867cae6afdf6ced415f7ae7fbb2aa2927b26f7648a04ae0f53bf51b697db54477e212f8247d17
+288daf166a807826e2508033b10d23c3992fc867c8a52dd172beb177e3c3ed638d54d6b6545ff291
+0ea341eb1b5d8a60a5e1324d85db5d2116daac145714803f4cb04a0e35207e593992d5f509c9c54c
+35feb4602c88c073a681e37d7813c7afe25a538a036b502c3d5dc078a1061b6ab679b3debeb2befe
+53cb6be0024e8477244c6ab913d44a7472ae91afb717187f7381f86209e8c1bfa6302a734389be65
+d8c43ec63aa358230cf3f894acbeb4278f122668b63b7ec27018b39d6e90221887aeaebd87b63824
+8f402935c665c615b5fc4991b664f3bcc8216ca20df8f24eac11fce92036dac76c91f1cb2ed16917
+3152c8c385c412c42fb13a93baabd5e2d579e598076c1c06857bb91db4b952e6375738801b87135c
+68fd270ed3c70b62e4455fae2ecdcc4ed0d56801f69b6dc0c65c2f41993e1f8b0e63eb9aca66eaac
+d5a32233a3c41aa02c8d75834ab0634f47832d6c1d0b17799fff2779ddc19cd6ee0e00cdc110edbc
+10e249fbd389cd8096a9907cbd70c7e3b41214ce396e851092064435e7343e57af0c21dfb985b152
+25a681fc04af2a22109ee6ba921639f38aaf408877d92ef37f68c95fd5ba0cc335e7395e377ab5fa
+8289b7015054c8c3a12be4b260432e3eb21bfb7bf7c85c546ab4c95fea2afc8be847f7ffee2a7a08
+0f63e1e32c76227e9b5e0ccb7cb973a32925c8479126eee4dd34af5e75e27be1471e89393e5ed05b
+4c7a5d6692011da0dca9d3ccb2163d2bd9738bbe5c83a3df870960d1597dae3b39b5700f7d51eece
+2008395da9dd5bf2f90ef94d1daa73ed492e83d6fb047573973de9633ed64b363dc66c580cc19967
+91ac81158fac8bc593cc4cb1d6a65b35e55df5710330b5680dffa211c9052deb9096acfe9890a4d2
+70af89d5ac635b789bdb350c742a03b78eca44aaacb9bc921cb1cb091562458d351e864af72b4ace
+cfdb9b464f2ef100684524b48d0d743c765956de801735665f6f860ffbe98960531d5d346fb2f718
+e2fdbc5a3e4498f344fbd5fd12a6ba216bc8d3c3e5dd8c26f1177309d5b205ba94bc53e7f3bfdfd8
+4474769ccab8b3cc77df814314f9096272980453710df7455eee1880c027d7aa87bc059d0b143cfd
+ebfec1639ca414b80b02a499217da0a76187ccd1f2933f4398d302acd5389edeabcd00ba81ebd26f
+3e3799c5b6529630462cf78f9bb9aa57fc4201c32687676abc863c230f337981fd9c7c8c4831be81
+bf03a0e8c3d6e2c992d7f6dd6467182198db992fd8af2d944ff0324c8c28b51f48300ee9fc34bcf3
+2d5c4e0e23d8408bf40c2c58a34eb3f1eb5dc2a8aff75c65d581e90d4e6f20a8f24a592f0c835633
+c45d73b58b7b912968097beb27da4dd6fe8074a62a03f8638b8183a5c18cf13b666bb5e7c50300e2
+1e4c4c101373a39583829c67af27948c4a1ef890a67999ec9b7554e9295d4b0a4fa6c9af3c116d3c
+ea18b42793abc05caf5da8fe018d5ec4097e90b306c6a1b2f3a60f600690bd21091755a2b48c22dc
+4fb6dca2fbeaa736ece9919b3ff345dd0bfc0efdb800921bc171f758d69e1b6580230f3d81ba9ec3
+6b1067618814440916d92b813b479375349e58eee0e4a1f3ad5b3a5e6feb527d21894aed29cd88cc
+5896fc1244d51aedc615f689689b60c10ea1b1551b9b1740820eb822915832a78df3034b0a24b517
+134ee08b144bc319f1fbebdb03036dab16b96d848699de5d5b77d8aaa68fc089cb5f26d249224330
+d66719f0a3b7d816d4e9abb09447600b3e6cc27b3de9b86c3bf7031fa00c10b1bfc2a6de80084fa3
+30a480b2a679ca3d1a9ce3fa7adcef4751f30efb4d86218997e104de04ed90513a5c4ce8da4ea2d6
+36664984bf191f4480ecc9c0b517fa2fd50f4a57e92b902213acb29a7b9e3f3daff0dfc5fcf9252a
+333c893941e85411ecc5c961190297f783790e2823d55f4e4adcb0be7873f64bc3fbcc756c1c0408
+eef91d5f80fab933bf04c97807395214782cccc6e0d26b8e9c13a4d524a0da4a6f0636f3280ce482
+b5bb3efe1e1bd3d367b7a886f3f640558f2a550c0b6e36127009f089cc727e24692afbd7f9a156df
+8cad2f93aa1443594c44fa5918294fdef9087f502e660e97b8c0129135b44cb891f2eb7b5831132d
+2c52d12c83f9ff6546c89f8fbfa7b8957bbf58007ee9d34e5d7ff98758ee7e0baf20502b231f80dd
+4a3efd5ef7630ffb04dd68ba9ae8851466534be924c823b6a81f68915de3a13b05231ee2949d6d1b
+82812f782ca4e679f799118a5332a589a7ea53b4ffbb7c2ca0802f295a866c077ef7a7abb282697e
+2e58183e72744bae7afa5ba30855e5d3314ed25374db65b9deb5b926f8f5c4848f7a26f7e6f6daf0
+c68db42aef3a87229daa4c62622fe2b598aee213c8d62cbb7af148c386cf4d94c704337e1d7345d8
+bfd625148de8a342228b8f5353a406222053c6b57888d804be3fa3872a25f730020bc93e60f95c96
+0aa0757afe9aac74c23f989601256a0c88be2bd830e63ba42a9fd5652c105aa274565f4c79abec4c
+b30550f2c1ae2586b3f05d287e3e720a241a117401be3fa3878af7d9ddabcbddc27b605d3540d27b
+e5e01bcce3c913b05ee3276c160626b4b5eabfd73de11266d2e7d63cf60aa966efbfe6aa231cc218
+9789cc29e1c0a91605b3c6050d0a6a7bb3db2c5fb07609eb238b786cd8eddcb67bef37cef00ab4c3
+22a6deaebf43887bf862ff24d4158a0a501087cc4b59c66921370df0c8a0a10ea8d6e846db90cef8
+b9667460d9c6f949df1414fd71e94a5d96ecc1240696653f955eea80f3b2b03e828c6902120726fb
+c2ae26f7f767f5c53076e73494345d7eb075652bc8e1da749a2a343fff18256706588d156f6b85a0
+48187d4325e65b2d9fe1daa8e73a111476f19ae2b5509bd62415d3acaf36b277faec0fd8c973bfc9
+abb9362f1e45115672fe961509ecacd8d709c96da2fd9a005eee54eebafd13ef429dcec41bda638c
+b00096bdb043cf57f4e31fb52c70ad4b5ccf10e445ded31286395073bd8636e13448442dc621a554
+5b769daf3bfc838059dda23372984447f19ea4617f9afa88aa7d010d648d2aebb4a992b59f8c38d2
+6150545ae76afecd8ff734456c8fc6ea99bb6a161a937f021d16d6b193b92032326754119c1701e2
+352e14544f3516d82d3de7d187ea82ed7bdb2e5d0834aa327c59201f2af03bed8941db303012ad63
+f687e3ebcafe715dd6bf9c528939a6dd5efe7b9606a25724f1dbf1d2355f8390debae2619c228325
+09f0736f8a926206d0aca029c13cb1136937004217d3acaf36b3d65644db74328447bb83ebea47c1
+f78d0eaeab44d47481f2a7938da66afdd7508a99659d611f5a0c1dd1cc7a973f7907d9a58fc143d6
+0b540570d16452e252bed91d02f08d72ba5b751b44d7a33b22772cef16d7fb40299ded5343e501f8
+14855b8c086d7c6cef7c1eca5e026956a4b5ce9b2c060d71a3a1883d0c12335f47c79c3e028b57fd
+d6fa4469b310fe0302f1e2f3b2460491eddee55cc4c19839a5a7efa0988167aec49ada483f28683d
+42c5eda8170385593583950d0a805fce376b79c95d767f8c4ad36077b3190044cc1f5fcd92edd110
+e6a2eef6698c996d4118757a609c39207dc1e160e576fb39c5e4e6054ec2bfea557f6a08fb308b37
+0617b947ed1450d80bab33768d36ddb1aee3f66f8a9f6be9105c6a24097035d05a3d15aacf697408
+0b9fe86d7095ba1f99d094d2c6291787cc04198c1842b12631757b2d420d8dc5ef96e2695a2fc163
+62e2fe834bd8cdd48e985b373f5b9a8af8ce0f050fef76f80489a531ecf8e14d58374984a57edfaf
+cd9e92d07b3c66f350b059cb6f5df93e43e2de2fb0d328f5addd115828fb40410a0df97a9456a88b
+8ce82438287637501ba315d33add7db496beeaaf11646b91551a5b4b024a3e0f5b03e2f1da5e7a24
+087485656c433d79ac718719d6925171cba7b4027d863f583686911dab46a1a1b9243173c704f360
+74b9d2b0f2cc164cf446066fcd6724cf76368241b6536b87d44edd5dc3a334c8b8f1aa49ec331d43
+c127b12d8de8d9aab5ea91b4f58dbee4f237f5715fb1c5048203714c85f0f4bb0c4cd855183b0f11
+a8830adc0bd4e939d0ca5e48159dfd3390d8b373ddc954fbd1a838d29b47a1bb2fb9003bc8ebfd71
+f56963543ac5849b56caf727cfd541570a82e20f6f30fc65c6569b3f5b992c266ec2c0a2795949c9
+71a9cf4a36515176ecf5fbdbe40f882c907e2f489a08677b6c1606d032951c3b132ea0dc2abf85aa
+843a5bcb6d194b2a3ecb075ac9e5e280aae6e5fd289d7328bae5897c68b6192631ed6d2c5501b062
+2700326228d3b2d77da5e39665f11f60753d65fc5b70fbc7421a302de6d6fa583c8816dbfecee048
+d77e4fe46c7c2699847be2c915a4907a025ede1a3e6f86204f79cc76f3d54fe8eedca8e3cfbaff1b
+931036accb078d752ec0012414787c97a3f112c5b5337b3a2d4a912433267cef910a6d1ae6f2efbe
+d51bf8ef8e14c5a06e5f6c074bc9798dbb5177e0cd364607e8daa46f6e89d499d90afb312060fb3f
+b9bb030962a0ecbee933041225cb52aa43842d64227814fdf9738f4fab136050afc19b0d940e7b25
+a5c4330b3db2dda133771706fad47eba62bd50fb38e486bfbb2382539641fc4c4c3ab0dc08c357ea
+d4346a01d51a02ac0a8aa7f1c81013ed1d27843dfdc28d9d8135f49eb01a18af430b6198d8787e5e
+9df89b7e3da30e7e9f179f19660580ff79041cc3819a498c36f8e22125e94ce0382d0120d6060fd6
+f2420b44527c8550374dd3df6a031209fe82b8a3e0d0b868f4e4966455606c43b014a529e7ade78d
+8cb64b8f9dbd5df3dac8d412fb5a173a43e25c9b2d459713c6a3c35919b9789ec9bde8ad950f9ac6
+246809a48a0476996fc08b4f2c2b92687b5ba6573f060f2e3f4104256ef6c61ef6e77af6a7510d30
+814430ded2e2222c5953c73f7b1d32b3351b82c8f70f5214f3ff262241685aeb45c7df807efd0b47
+f422a3ed78ece7e65b4c04da278b074d248bd69d35c256fce7cd7db0c8ebda2d64845cbcb44f9fc6
+433204a9bb9349d699b80ae4b271e45386092d24e2222a10d641b6cf70950b083600c0fcf9d66466
+b04b2a3ee56de77d13b261df8b05cf0a452be54d31b9b0456e43423c972d637373a3bf526bd2159a
+6ae608871257e960cc6f69ac2c93ff3f5c167b2f2bcb6d3290b9c970d5ca5cbe1621faf82961adb2
+cdb527d5106ac655ea21fe08e146f1635d5cf9b36256cb561acd2d75e7fd3b2c636897498fe877c7
+e4b091d9b8b92dcd23cfab07494d347dad47158370679c6a6275f8996a44d396760514b64d41c9d6
+bb42b626213bf0cad157195ae31c09990e71be97a869229b88e4562a2f00e317634dbc2510f964d0
+29b61016c31d053b0851171e2d128285ba31169fba4cbcca18ee818f12ecfbcb56e4135903505eef
+4efe2fd6de7dfb08493f06ce24e553a7b6f2311d398e1b45ba38aff05a91e4485bfe7f3189d6ca5c
+1913ea1e50e0af3a04e1f10208074206db4f31ac37146a191648f72686e56ef6b1cab976e238e0c5
+c208e18185755175bd68d2af540fbfd52da739ff93ce921b5ca36a75cb9527c11b15c876c4765677
+826ed652ba6415061275fe2d02e9c5c44833b33d54fc872efa6a7d1f825e92fe1f20ea43550728ba
+d2811513ccc82e7c2268c00d2ed5911ef6bfe504970f2ce4b9deb6278cbda135a63acb99c0b51bb5
+e456b1dfdf894d0c3eb62e8adbc017389d9af12213ed2dc08082bdbc0af878c53018f5942ddeee0e
+3a62892dbd9a17fe25017663862c04e06810e4234df7494a04d48b48e85ead41a4c4f656c27136f1
+7257df5bfd99dd2cd70f82f9b9c2b15eb151c8cf2efdde9d4b6122103c6ddfe23b55245bbd54d999
+35b9e1acd74fc7122c724f6bb894f31638008fa256cf7651e40bb1a7cff70c24200f0cafabf6eb8a
+85d65e8424c2d2e23af2f308c5016985c200f258af36be2160bafe4de18c08708a0729e9e8e6b48f
+fb2fc6b25ea9590820e7dbd3e03c604fe20ea48f6978d1a0b3c711d20f5fe6b9f0480d0c5a884537
+f08732d3f9d94d08f8276af0ff7373acd551c8a07d5e1dab3eafa5c390d771b451ed3c9c6caa50a2
+71c18825a0b017dd16ca1d0f56a915d3dc96c520937e7dd19fefa311e8478b20593708a45345d16e
+eb2ef624b2ec3380bd70e21f7953f6280d69ac90a07355542bdb1256d9975f0b9eac6d21f82a63c6
+877c154ec9ee04a570a67fa8cd158d0d88da225e78fc5fcdcde3528f53f100fba7e125b952609a86
+5e889df9a7789cca53dfb6452838a1b016ea15b8e158abad14c1838d54e6b59026ca48be6596f762
+4f2407dccdb53cb9c3ccb98da376a1ea03679106d24b13cbd89808d7e4bc0d46ac7827ff832cea6b
+6a35cf5a17a0a6c177f3c4615c1d579956330eeb64ee979afc34e6e3b36f55f8af85f4d016a1be1c
+6b1810c10a52afb47320ad8814c1ce6aed7b037b32cc1fa6ac76a8638dda740396e36e63e7e45277
+bf410de2e0ffbe0973b78d9e197f0ab3446e4cc99765747ba38ccc94b7b9dc9c5f9ab7e572bad445
+854f30405d1a78552af98b2215126489621f9f97f2f1bfb333ece290deab06597be5d2ca09876e29
+6d4339d456e07f96dca8f4eb3a30f2347478501e61327187ab14b151434a504dfd542b5135f018a5
+419398a21a032389ab4f7cc1eaa35a2c272628a392086ae152b0ce7f73882f7c16337a140591e558
+8a2be37ac8c4e17e6a27fa9fc0334e30428e4929c687dd76121e7df5e5f0c39d504024c10c2b9212
+ae531d382e29136fef61753bf5fc0fa863846f07ad87e439833fd5de415d51552aaf0b8857237ee3
+76ba327503b26cb7d10d89654fec1769fc20c84252811d26cd322a470245310340d4a35246ddf1e9
+2d9b686b33e4524713239ea22506d8d50e25a9d0723b6482de8713ac0273b1514b639412e1c6130d
+8e7d52f6d69194328d413c9acda2bc9684343b7290a217089b0c8384fdd4abf3c81b44438960445e
+1a5670f134a8e888ef1ca43fa676d5281277af21357f51656dd06433dc371c47591e10404373757e
+c5ebd6f16cec9edf07be892f63625579c12344db3ce1773f50daad01b73ea2bfaef178fe5a6ec6cb
+760d1381a7bd9130ac1403bf9709d4ae9801ef68f47281f2e6cecaa9a2b0549ecfec6de48e4fad4a
+06141a58d1c383b71bd67889b5cf4db062b7a44e1f1e8843d97e76a26b4a01101eb25c42a091bda3
+45e1462006b196875758ba1bf10060523239e259044024d0a8e8786a42570c6b92496c2dfaa263f0
+4b2773f0ab1faa9d62e675f4ed74a81c3406c8d68ca85a3ddc4b878c401ea92652aea19efd1cf30b
+06ab06166de02f3c843d1ebdd55a9d5fb63d3e74b192ce6da4cc07bbc59692356326cd0a820f857e
+595db13e169e5cddd526bc9345fd8eaae762a4c077932d7a50dd7e24f8edf4e812a47849b347c499
+c8508db13ef710de447fadc51b6963ce6b693816acff1bd4ef1e0070daee22b6176f5d55feb316d3
+ebbf11526f1e4079530d6de35edcdd564090bc1e760bac16cb3397273a4c610dbf85d3fd9d02b108
+eb15f11a29674fac9575404319ac5fb7f0fba1ff8ef402548bca986a85d39ffead8e5b980fff9b3a
+55c4a45761814e74a0d5299bb4290a99647b45d97b62b95592872602b5e6423bf8f2f84c05b1e254
+cd4336ceec3147111f7606375a6b9318fe540f83dfe813acd4a792ffeab78485dc8fd17dfc61a8a2
+998bbf493a42549e200da5a8a3fbab5036909f666e1a15b4f92840881ae4e4ea666d1f43954e251f
+10d0b5798275e689b7c963a51322f0c6d88dafcc5a81e6f79bfcbf5ad86489a683b8881b0ec0027b
+7553e93343bb2704ad2f9604d6f2a76650b1640c12f016afbcf8b7759d38499cd167fcd3dc5065f3
+d9e8d912a182153f76601c47bede484e1259928f9f2a5bc97b0cc45148548124a59ec92677a18890
+ccffd85012db2cbba3d4156a4549031faa705932878ca629fe6b8c0c5fea624600648f98d989e591
+af42966e32a1b338c2be8a39c948080ea5f9e809f132a90053fdb2dc165145e462a9516ee1e74cf0
+13d536c2c2041a6b7881b3bbd4bdf166957b500b7dc8ddf900251696622b45f58a48348704519d8a
+445315ed8d705314fd2161e5caa4d61a2f908f8678f6621ca987381c459c7b8e35e6b984322a49e7
+adf68d55bcacbe0d8ae5360c8294f6b3c96b19e140cecd83c5f0efb7619f2d7c85dedcb6345d8855
+a7e70768ec5212b807952512e525d750f35577416fbf89ca2b73c672bfc99c6e34f28b3e4d965482
+c0dd705aad648b8a8de5b44b782e96f5ae7bbfa9ccb0a0c67c07aa5fbde0ab16cb0458be39a555a2
+f24c3b45745f8e0ecb0d8c53ede31810b0632a185eb006b694454c6fa9d34cb7705cbbf625739e49
+c8819c5c46d9045ee2aa571d8760e41d6104bb43c80e98f843e28db5bdd4ed68ce5b5f967f7575cf
+43707710089481820bcca57a6169b9277cdab6d60c2cbbb5f1b6855166931bdb9b4bfd10833d6230
+ef3a5a6bdd20ee9513a4bda24cd0dc565d259b4442aa253a1b16ba98e9f5fd647494e17abf25d6be
+ef4744eccaf0cc9fe6800146ffce23d6c0aa30877ec7bc62a22ef7e2a87154600aeb208ae2235c39
+84c4dab4ee528081e6a189dc71221a40841c0ea5f6f2a7d73816857ac898bda7abf23c184fca560e
+24c1650c55d2b9d01008b81154d9d968e10be30275e1bc3431355ca1632d4c7e5d203fa9ce5de31f
+3ab17ea4593698a01cff64d5e1dc5f3ff2b827bc012b23d46430df2dfcf41d2f973e8e628f6c9f73
+818196fa7bde39883b700b6b2e9f9ea2b08083e6886dc43bd98498e128afb338eb7b2b6aa5e11b84
+8a916088717fc45fb030a7070f49faef3f9a3e43c95c8e62dbf677a98c27c25d17ef3b559e6c2c6d
+52eda744e85cadd7e7c781ec4d5a840c6e10e80ab6a696bb89985f7fdbe345a9cc542be3ef298ff0
+c32b1958002f5fcaa93752773c4d0058ac4c8ba523dcd8fcb78d17cde17fc855f350009b0fadc581
+f2d63cc0d2775093964719997dc82550f2973856c6b226db91f9979197ec980dd1fee128ddfcc5d9
+d363519b5582e7ea861292e77902db1e69e5f360c4d4334ae6966deeb33a023889d5608775dab9b3
+e6982ffc257d0f4db708947b966714b7c97c3c4283cbd0459eb8c63fa27ef1a93a231eb22ba24986
+54f7e3e5c4840dd1edad4316d16d8bdafc0ba5792ee3cd9cd195200d2a16c0c8e1ca40972f94893f
+6b77ba5ef861a2ab14f51b0fbea79b89b73449f24a4e31c3fcd3d51e662ebbceecb80db290990e18
+03f2fc929673b3fd1cd13d65d0829cd39311b897c4016ca87a2b730b5ce4718592c1333b7043acb0
+d2228b86d415cb72c01a22561480f20a8df054649a6a0b0f7713ab600ba4a1ec338bb8669cb906c6
+5b0a513a6f803ec8c075c08585ed2b62a98640391448aca9ffa6f7242d150bb3fa68947a1a203eb1
+f4046b4ad4cf64ddd3410428ad0a33d261767819873f3e267a47a01975739d2eff2d31b20c0753db
+1cd81f2446306849ba2a483e3ac3c47151f62f45b72fb95b1b15c9d07515dd890597b5c0cff4e891
+ebdb4f261539eff718452713617193b9d4f23d41ee71d3d84214b0f327a89eb2549901d298a79784
+5a7b61859e2c57e3c6a38f8b455cfcaba73ea65c304aeb2fe3f9d29caee2abc5baa0c689aeaafb06
+b72a424ea452ddc86b78b3039a6e6b67f81e6322b2d90f33489bc8215dc43c9602b6ca1ec0cfd3f3
+64b8a90bfed5f3c513d8d8f9bb19e748961b3f04cae1e4cc79f12e56eef54e07911cab32c3b7c70b
+dde1262cc1b3c48e6ea945906e283f2d11a3c7b8ba5ca8308643f6dd7fe8374ff1b18b08d43a2bb9
+30c59100436d735c4f50735aac25bc48c77144295edc6c257da74d6aa324c1f5e6e7f633fd63fa8d
+66c6b25104f2c9b165bd5fea4aada27b90fed30397c189c223df55ed355ac75dd424a168bb486ced
+08e74ac0896d56043e382e53bb92fc9af524f3c2935719d1737701e626871d53ebf58c410f0b2e07
+704a5cf8b6a7ab2fdc9fbe67f6412d9cdfb1a887c44b30f616cd0755c2f21a5f183ad6a9f81baa2d
+a5a30c6d9ef342d4e3d135794126dc2c3ee9172c9ecd2918b028ad9c42f05daf7ab25aa9d925b47c
+7fef33008b973a329786466b241acb2e9ffca441b0641c00961e2139edf940f6aafed2a4c74b00e0
+8a1167d14489cfd70029b4cb9a76600aa3ad3413e8870a28fa0cee49ae827975070b2859f90f4d85
+8b233fa6697efafe55f4d319b8b6b10babbd8088f0cfc59c28cd139c25cb810479f8c7df7b5e3524
+d486443a884a50b1c3e0b19a60e48e02c6c6b309ba17c8706a34955b80d7168786f00e92c4c32ea1
+bd1f05349c837e7dd3189f5a74c6bf0bc7b72b9177e682aaec44b1ba5709d0de45e37e9defa8fd96
+c35c93a045a82dc5eb4a3462ef054a9cd5ec8a4e6dd0bec4c9c2bf3d37ca0d1705755a369d1052b0
+fb41a82b858b208dc04f29d23dc628979b3678d20b20eb9c087d1b0d8821a429fa4fdb2b86900ff4
+3ab6bd34448a980acd72993735ec8c8c261c322f29d415468c516ce4dff483c6309c263520108a1f
+6d3d79c5d494f83120d4f5bb49ed3bb4f5cafd8234f2142b2c63d1603e7fd1cdb519ca565218bc56
+7cf1b175e905343570941b5954b4c4693aa5d307ecbe1501f6a5d1ae39effa675ec9e28761afea02
+8d23fadb7af24eccbe125bdea364a36b4ea2721753427c0c66d96c0763290ba0a1262e3d0f99435d
+1ad23cc009f965ec991d9200a2f72eec9379aeeab3eeecda8312dbd39fa27e8104567275191626cd
+e17bc6e84ec1c7d84e22a8ad145d1b8ec35049f613290385427a43d890af1b708b5e6e2fd9847edd
+fa64aba149fab4ad76117bbc34416be1360e857e8471d0e610ebf6dda65d9935004f4033c8c4bc57
+9efc4874f4ed42e6c438c4d1080482bde5af83b814c1396c693ba2d1e093fb0479efb9e95feea7ae
+6c9d52571751b617480cb4a1d0774129235a1252676a26c2cf8a5218ae6e528202aef1448c10df21
+036598f59460dfb084e7935dc4cac6338c28a7d19acde76ea1d491b61d0ae0042a9e73ec8cb01b78
+fc28aa8dcbefb4b32b570cb204e1983476f3dfb10ee0aed8728bfd8a071a984fbe518917aabe0fe4
+0d3d37a5cfede6605ceb3a9cb59c15d3572d81555dbc8031023f89a9a3f300092cd000b501f233ee
+3c6e40ade1f44ad930deb44d9df11e26dfb9a353dfafce5f832f1a611a6a8aea8a6899c0768dac50
+932f4be1b8723b1b162f6ee525181f4b86ebed7d3872933c54083a15ca54efcdba30548aa7ab5d9d
+52f1042a9272365c272c2d904ac0eca00c18a5de740743f1fb707389caaa42ba31366403cae2cac1
+0d8130a9934324d29a9a6de5e847484c735628491bef5e9e490792adeb822331c3390a6fb8d271b6
+393a371aa0772d0c0aa4459a152c7ed71f30595fdaf6de639cadd1839c79aa4706790250659a3259
+70e66194ab2efe8c02a8ee3fbb46ec1750a7c41c8198144fbbdfca713a3d74135b505c6d5176c188
+b059d4c28d2ab9f4d265f9740ca5f0f594f0183b08e6cf49910bffbf4d57f52f
+#END
+
+#BEGIN MEM_CONFIG
+ HBW_Program PROGRAM  0 -1
+ VGR_Program PROGRAM  0 -1
+ VGR_Copy_State <Virtual>  0
+ VGR_Suction <Virtual>  0
+ MPO_Program PROGRAM  0 -1
+ MPO_Suction <Virtual>  0
+ MPO_Copy_State <Virtual>  0
+ SLD_Program PROGRAM  0 -1
+ SLD_Copy_State <Virtual>  0
+ SLD_Suction <Virtual>  0
+ SSC_Program PROGRAM  0 -1
+ SSC_Copy_State <Virtual>  0
+ HBW_Pick TASK  0 -1
+ HBW_Copy_State <Virtual>  0
+ PID_10 PID  0
+ PID_11 PID  0
+#END
+
+// Beginning of Code Block VGR_Copy_State
+$LGCMOD VGR_Copy_State
+
+// Rung VGR_Copy_State#1
+// Offset 0
+NOP
+
+// Rung VGR_Copy_State#2
+// Offset 1
+RET
+
+// End of Code Block VGR_Copy_State
+$LGCEND VGR_Copy_State
+
+// Beginning of Code Block VGR_Suction
+$LGCMOD VGR_Suction
+
+// Rung VGR_Suction#1
+// Offset 0
+NOP
+
+// Rung VGR_Suction#2
+// Offset 1
+RET
+
+// End of Code Block VGR_Suction
+$LGCEND VGR_Suction
+
+// Beginning of Code Block MPO_Suction
+$LGCMOD MPO_Suction
+
+// Rung MPO_Suction#1
+// Offset 0
+NOP
+
+// Rung MPO_Suction#2
+// Offset 1
+RET
+
+// End of Code Block MPO_Suction
+$LGCEND MPO_Suction
+
+// Beginning of Code Block MPO_Copy_State
+$LGCMOD MPO_Copy_State
+
+// Rung MPO_Copy_State#1
+// Offset 0
+NOP
+
+// Rung MPO_Copy_State#2
+// Offset 1
+RET
+
+// End of Code Block MPO_Copy_State
+$LGCEND MPO_Copy_State
+
+// Beginning of Code Block SLD_Copy_State
+$LGCMOD SLD_Copy_State
+
+// Rung SLD_Copy_State#1
+// Offset 0
+NOP
+
+// Rung SLD_Copy_State#2
+// Offset 1
+RET
+
+// End of Code Block SLD_Copy_State
+$LGCEND SLD_Copy_State
+
+// Beginning of Code Block SLD_Suction
+$LGCMOD SLD_Suction
+
+// Rung SLD_Suction#1
+// Offset 0
+NOP
+
+// Rung SLD_Suction#2
+// Offset 1
+RET
+
+// End of Code Block SLD_Suction
+$LGCEND SLD_Suction
+
+// Beginning of Code Block SSC_Copy_State
+$LGCMOD SSC_Copy_State
+
+// Rung SSC_Copy_State#1
+// Offset 0
+NOP
+
+// Rung SSC_Copy_State#2
+// Offset 1
+RET
+
+// End of Code Block SSC_Copy_State
+$LGCEND SSC_Copy_State
+
+// Beginning of Code Block HBW_Copy_State
+$LGCMOD HBW_Copy_State
+
+// Rung HBW_Copy_State#1
+// Offset 0
+NOP
+
+// Rung HBW_Copy_State#2
+// Offset 1
+RET
+
+// End of Code Block HBW_Copy_State
+$LGCEND HBW_Copy_State
+
+// Beginning of Code Block $Main
+$PRGRM $Main
+
+// Rung $Main#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"Mini Factory Fall 2023 Project<br>"
+"Modified by Hunter Hawkins for CDA section<br>Date 10/25/23"
+#END
+
+NOP
+
+// Rung $Main#2
+// Offset 1
+#BEGIN FMT_COMMENT 
+"Run HBW_Program"
+#END
+
+STR ST1
+RUN HBW_Program
+
+// Rung $Main#3
+// Offset 4
+#BEGIN FMT_COMMENT 
+"Run VGR_Program"
+#END
+
+STR ST1
+RUN VGR_Program
+
+// Rung $Main#4
+// Offset 7
+#BEGIN FMT_COMMENT 
+"Run MPO_Program"
+#END
+
+STR ST1
+RUN MPO_Program
+
+// Rung $Main#5
+// Offset 10
+#BEGIN FMT_COMMENT 
+"Run SSC_Program"
+#END
+
+STR ST1
+RUN SSC_Program
+
+// Rung $Main#6
+// Offset 13
+#BEGIN FMT_COMMENT 
+"Run SLD_Program"
+#END
+
+STR ST1
+RUN SLD_Program
+
+// End of Code Block $Main
+$PGMEND $Main
+
+// Beginning of Code Block HBW_Program
+$PRGRM HBW_Program
+
+// Rung HBW_Program#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"HBW Program"
+#END
+
+NOP
+
+// End of Code Block HBW_Program
+$PGMEND HBW_Program
+
+// Beginning of Code Block VGR_Program
+$PRGRM VGR_Program
+
+// Rung VGR_Program#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"VGR Program"
+#END
+
+NOP
+
+// End of Code Block VGR_Program
+$PGMEND VGR_Program
+
+// Beginning of Code Block MPO_Program
+$PRGRM MPO_Program
+
+// Rung MPO_Program#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"MPO Program"
+#END
+
+NOP
+
+// End of Code Block MPO_Program
+$PGMEND MPO_Program
+
+// Beginning of Code Block SLD_Program
+$PRGRM SLD_Program
+
+// Rung SLD_Program#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"SLD Program"
+#END
+
+NOP
+
+// End of Code Block SLD_Program
+$PGMEND SLD_Program
+
+// Beginning of Code Block SSC_Program
+$PRGRM SSC_Program
+
+// Rung SSC_Program#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"SSC Program"
+#END
+
+NOP
+
+// End of Code Block SSC_Program
+$PGMEND SSC_Program
+
+#BEGIN ELEMENT_DOC
+"X0","HBW_I1","","HBW - I1 = Reference switch horizontal axis -  IX_HBW_RefSwitchHor izontalAxis_I1"
+"X1","HBW_I2","","HBW - I2 = Light barrier inside -  IX_HBW_LightBarrierIn side_I2"
+"X2","HBW_I3","","HBW - I3 = Light barrier outside -  IX_HBW_LightBarrierO utside_I3"
+"X3","HBW_I4","","HBW - I4 = Reference switch vertical axis -  IX_HBW_RefSwitchVer ticalAxis_I4"
+"X4","HBW_A1","","HBW - A1 = Trail sensor (signal 1, lower) -  IX_HBW_TrailSensor1L ower_A1"
+"X5","HBW_A2","","HBW - A2 = Trail sensor (signal 2, upper) -  IX_HBW_TrailSensor2 Upper_A2"
+"X6","HBW_B3","","HBW - B3 = Encoder vertical axis imulse 1 -  IX_HBW_EncoderVerti calAxisImp1_B3"
+"X7","HBW_B4","","HBW - B4 = Encoder vertical axis imulse 2 -  IX_HBW_EncoderVerti calAxisImp2_B4"
+"X8","HBW_B1","","HBW - B1 = Encoder horizontal axis imulse 1 -  IX_HBW_EncoderHoriz ontalAxisImp1_B1"
+"X9","HBW_B2","","HBW - B2 = Encoder horizontal axis imulse 2 -  IX_HBW_EncoderHoriz ontalAxisImp2_B2"
+"X10","HBW_I5","","HBW - I5 = Reference switch cantilever front -  IX_HBW_SwitchCantile verFront_I5"
+"X11","HBW_I6","","HBW - I6 = Reference switch cantilever back -  IX_HBW_SwitchCantile verBack_I6"
+"X12","MPO_I1","","MPO - I1 = Reference switch turn-table (position vacuum) -  IX_MPO_RefSwitchTur nTable_PosVac_I1"
+"X13","MPO_I2","","MPO - I2 = Reference switch turn-table (position belt) -  IX_MPO_RefSwitchTur nTable_PosBelt_I2"
+"X14","MPO_I3","","MPO - I3 = Light barrier end of conveyor belt -  IX_MPO_LightBarrierEn dOfConBelt_I3"
+"X15","MPO_I4","","MPO - I4 = Reference switch turn-table (position saw) -  IX_MPO_RefSwitchTur nTable_PosSaw_I4"
+"X16","MPO_I5","","MPO - I5 = Reference switch vacuum (position turn-table) -  IX_MPO_RefSwitchVac _PosTurnTable_I5"
+"X17","MPO_I6","","MPO - I6 = Reference switch oven feeder inside -  IX_MPO_RefSwitchOv enFeederInside_I6"
+"X18","MPO_I7","","MPO - I7 = Reference switch oven feeder outside -  IX_MPO_RefSwitchOv enFeederOutside_I7"
+"X19","MPO_I8","","MPO - I8 = Reference switch vacuum (position oven) -  IX_MPO_RefSwitchVac _PosOven_I8"
+"X24","MPO_I9","","MPO - I9 = Light barrier oven -  IX_MPO_LightBarrierO v en_I9"
+"X25","VGR_I1","","VGR - I1 = Reference switch vertical axis -  IX_VGR_RefSwitchVert icalAxis_I1"
+"X26","VGR_I2","","VGR - I2 = Reference switch horizontal axis -  IX_VGR_RefSwitchHori zontalAxis_I2"
+"X27","VGR_I3","","VGR - I3 = Reference switch rotate -  IX_VGR_RefSwitchRot ate_I3"
+"X28","VGR_B1","","VGR - B1 = Encoder vertical axis imulse 1 -  IX_VGR_EncoderVertic alAxisImp1_B1"
+"X29","VGR_B2","","VGR - B2 = Encoder vertical axis imulse 2 -  IX_VGR_EncoderVertic alAxisImp2_B2"
+"X30","VGR_B3","","VGR - B3 = Encoder horizontal axis imulse 1 -  IX_VGR_EncoderHoriz ontalAxisImp1_B3"
+"X31","VGR_B4","","VGR - B4 = Encoder horizontal axis imulse 2 -  IX_VGR_EncoderHoriz ontalAxisImp2_B4"
+"X32","VGR_B5","","VGR - B5 = Encoder rotate impulse 1 -  IX_VGR_EncoderRotat eImp1_B5"
+"X33","VGR_B6","","VGR - B6 = Encoder rotate impulse 2 -  IX_VGR_EncoderRotat eImp2_B6"
+"X34","SLD_I1","","SLD - I1 = Pulse counter -  IX_SLD_PulseCounter_ I1"
+"X35","SLD_I2","","SLD - I2 = Light barrier inlet -  IX_SLD_LightBarrierInl e t_I2"
+"X36","SLD_I3","","SLD - I3 = Light barrier behind color sensor -  IX_SLD_LightBarrierBe hindColorSensor_I3"
+"X37","SLD_I5","","SLD - I5 = Light barrier white -  IX_SLD_LightBarrierW h ite_I5"
+"X38","SLD_I6","","SLD - I6 = Light barrier red -  IX_SLD_LightBarrierRe d_I6"
+"X39","SLD_I7","","SLD - I7 = Light barrier blue -  IX_SLD_LightBarrierBl u e_I7"
+"X40","SSC_I1","","SSC - I1 = Reference switch vertical axis -  IX_SSC_RefSwitchVerti calAxis_I1"
+"X41","SSC_I2","","SSC - I2 = Reference switch horizontal axis -  IX_SSC_RefSwitchHori zontalAxis_I2"
+"X42","SSC_I3","","SSC - I3 = Light barrier inlet -  IX_SSC_LightBarrierSto rage_I3"
+"X43","SSC_I4","","SSC - I4 = Light barrier behind color sensor -  IX_SSC_LightBarrierOu t sourcing_I4"
+"X44","SSC_B1","","SSC - B1 = Encoder vertical axis imulse 1 -  IX_SSC_EncoderVertic alAxisImp1_B1"
+"X45","SSC_B2","","SSC - B2 = Encoder vertical axis imulse 2 -  IX_SSC_EncoderVertic alAxisImp2_B2"
+"X46","SSC_B3","","SSC - B3 = Encoder horizontal axis imulse 1 -  IX_SSC_EncoderHorizo ntalAxisImp1_B3"
+"X47","SSC_B4","","SSC - B4 = Encoder horizontal axis imulse 2 -  IX_SSC_EncoderHorizo ntalAxisImp2_B4"
+"X56","VGR_PWM_ROTATE_1","","VGR - B5 = Encoder rotate impulse 1 -  IX_VGR_EncoderRotat eImp 1_B5"
+"X57","VGR_PWM_ROTATE_2","","VGR - B6 = Encoder rotate impulse 2 -  IX_VGR_EncoderRotat eImp 2_B6"
+"Y4","HBW_Q5","","HBW - Q5 = Motor M3 vertical axis downward -  QX_HBW_M3_Vertical AxisDownward_Q5"
+"Y5","HBW_Q6","","HBW - Q6 = Motor M3 vertical axis upward -  QX_HBW_M3_Vertical AxisUpward_Q6"
+"Y6","HBW_Q7","","HBW - Q7 = Motor M4 cantilever forward -  QX_HBW_M4_Cantilev erForward_Q7"
+"Y7","HBW_Q8","","HBW - Q8 = Motor M4 cantilever backward -  QX_HBW_M4_Cantilev erBackward_Q8"
+"Y15","MPO_Q8","","MPO - Q8 = Motor M5 vacuum towards turn- table -  QX_MPO_M5_Vacuum TowardsTurnTable_Q8"
+"Y16","MPO_Q9","","MPO - Q9 = Light oven -  QX_MPO_LightOven_Q 9"
+"Y17","MPO_Q10","","MPO - Q10 = Compressor -  QX_MPO_Compressor_ Q10"
+"Y18","MPO_Q11","","MPO - Q11 = Valve vacuum -  QX_MPO_ValveVacuu m_Q11"
+"Y19","MPO_Q12","","MPO - Q12 = Valve lowering -  QX_MPO_ValveLoweri ng_Q12"
+"Y20","MPO_Q13","","MPO - Q13 = Valve oven door -  QX_MPO_ValveOvenD oor_Q13"
+"Y21","MPO_Q14","","MPO - Q14 = Valve feeder -  QX_MPO_ValveFeeder _Q14"
+"Y22","VGR_Q1","","VGR - Q1 = Motor M1 vertical axis up -  QX_VGR_M1_VerticalA xisUp_Q1"
+"Y23","VGR_Q2","","VGR - Q2 = Motor M1 vertical axis down -  QX_VGR_M1_VerticalA xisDown_Q2"
+"Y24","VGR_Q3","","VGR - Q3 = Motor M2 horizontal axis backward -  QX_VGR_M2_Horizont alAxisBackward_Q3"
+"Y25","VGR_Q4","","VGR - Q4 = Motor M2 horizontal axis forward -  QX_VGR_M2_Horizont alAxisForward_Q4"
+"Y26","VGR_Q5","","VGR - Q5 = Motor M3 rotate clockwise -  QX_VGR_M3_RotateCl ockwise_Q5"
+"Y27","VGR_Q6","","VGR - Q6 = Motor M3 rotate counterclockwise -  QX_VGR_M3_RotateC ounterclockwise_Q6"
+"Y28","VGR_Q7","","VGR - Q7 = Compressor -  QX_VGR_Compressor_ Q7"
+"Y29","VGR_Q8","","VGR - Q8 = Valve vacuum -  QX_VGR_ValveVacuu m_Q8"
+"Y30","SLD_Q1","","SLD - Q1 = Motor M1conveyor belt -  QX_SLD_M1_Conveyor Belt_Q1"
+"Y31","SLD_Q2","","SLD - Q2 = Compressor -  QX_SLD_Compressor_ Q2"
+"Y32","SLD_Q3","","SLD - Q3 = Valve first ejector (white) -  QX_SLD_ValveFirstEje ctorWhite_Q3"
+"Y33","SLD_Q4","","SLD - Q4 = Valve second ejector (red) -  QX_SLD_ValveSecond EjectorRed_Q4"
+"Y34","SLD_Q5","","SLD - Q5 = Valve third ejector (blue) -  QX_SLD_ValveThirdEje ctorBlue_Q5"
+"Y35","SSC_Q1","","SSC - Q1 = Motor M1 vertical axis up -  QX_SSC_M1_VerticalA xisUp_Q1"
+"Y36","SSC_Q2","","SSC - Q2 = Motor M1 vertical axis down -  QX_SSC_M1_VerticalA xisDown_Q2"
+"Y37","SSC_Q3","","SSC - Q3 = Motor M2 horizontal axis backward -  QX_SSC_M2_Horizonta lAxisClockwise_Q3"
+"Y38","SSC_Q4","","SSC - Q4 = Motor M2 horizontal axis forward -  QX_SSC_M2_Horizonta lAxisCounterclockwise_ Q4"
+"Y39","SSC_Q5","","SSC - Q5 = LED Green -  QX_SSC_LED_Green_ Q5"
+"Y40","SSC_Q6","","SSC - Q6 = LED Yellow -  QX_SSC_LED_Yellow_ Q6"
+"Y41","SSC_Q7","","SSC - Q7 = LED Red -  QX_SSC_LED_Red_Q 7"
+"Y42","SSC_Q8","","SSC - Q8 = LED Red Online -  QX_SSC_LED_Red_O nline_Q8"
+"Y43","MPO_Q4","","MPO - Q4 = Motor M3 saw -  QX_MPO_M3_Saw_Q4"
+"Y44","MPO_Q5","","MPO - Q5 = Motor M4 oven feeder retract -  QX_MPO_M4_OvenFe ederRetract_Q5"
+"Y45","MPO_Q1","","MPO - Q1 = Motor M1 turn-table clockwise -  QX_MPO_M1_TurnTab leClockwise_Q1"
+"Y46","MPO_Q2","","MPO - Q2 = Motor M1 turn-table counterclockwise -  QX_MPO_M1_TurnTab leCounterclockwise_Q2"
+"Y47","MPO_Q3","","MPO - Q3 = Motor M2 conveyor belt forward -  QX_MPO_M2_Conveyo rBeltForward_Q3"
+"Y48","HBW_Q1","","HBW - Q1 = Motor M1 conveyor belt forward -  QX_HBW_M1_Convey orBeltForward_Q1"
+"Y49","HBW_Q2","","HBW - Q2 = Motor M1 conveyor belt backward -  QX_HBW_M1_Convey orBeltBackward_Q2"
+"Y50","HBW_Q3","","HBW - Q3 = Motor M2 horizontal towards rack -  QX_HBW_M2_Horizont alTowardsRack_Q3"
+"Y51","HBW_Q4","","HBW - Q4 = Motor M2 horizontal towards conveyor belt -  QX_HBW_M2_Horizont alTowardsConveyorBel t _Q4"
+"Y52","MPO_Q6","","MPO - Q6 = Motor M4 oven feeder extend -  QX_MPO_M4_OvenFe ederExtend_Q6"
+"Y53","MPO_Q7","","MPO - Q7 = Motor M5 vacuum towards oven -  QX_MPO_M5_Vacuum TowardsOven_Q7"
+"Y80","HBW_PWM_M1","","QW_HBW_PWM_Con veyor Belt_M1"
+"Y81","HBW_PWM_M2","","HBW = PWM Motor M3 vertical axis -  QW_HBW_PWM_Verti cal_ M3"
+"Y82","HBW_PWM_M3","","HBW  = PWM Motor M3 vertical axis -  QW_HBW_PWM_Verti calA xis_M3"
+"Y83","HBW_PWM_M4","","HBW  = PWM Motor M4 cantilever -  QW_HBW_PWM_Canti leve r_M4"
+"Y88","VGR_PWM_M1","","VGR = PWM Motor M1 vertical axis -  QW_VGR_PWM_Vertic al_ M1"
+"Y89","VGR_PWM_M2","","VGR = PWM Motor M2 horizontal axis -  QW_VGR_PWM_Horiz ontal _M2"
+"Y90","VGR_PWM_M3","","VGR = PWM Motor M3 rotate axis -  QW_VGR_PWM_Rotat e_M 3"
+"Y91","MPO_PWM_M5","","MPO = PWM Motor M5 turn-table -  QW_MPO_PWM_Vacu um_ M5"
+"Y92","SSC_PWM_M1","","SSC = PWM Motor M1 vertical axis -  QW_SSC_PWM_Vertic al_ M1"
+"Y93","SSC_PWM_M2","","SSC = PWM Motor M2 horizontal axis -  QW_SSC_PWM_Horiz ontal _M2"
+"Y94","MPO_PWM_M1","","MPO = PWM Motor M1 turn-table -  QW_MPO_PWM_Turn Table _M1"
+"WX0","SLD_A4","","SLD - A4 = Color sensor -  IW_SLD_ColorSensor_ A4"
+"WX1","SSC_A1","","SSC - A1 = Color sensor -  IW_SSC_ColorSensor_ A1"
+"C0","NOP","",""
+"C11","C11_Interlock","","Used to delay logic by one scan"
+"C12","C12_Interlock_2","","Used to delay logic by one scan"
+"C20","HBW_Has_Pallet","","True when carrying a pallet"
+"C51","X_Direction","","True: Left False: Right"
+"C52","Z_Direction","","True: Down False: Up"
+"C80","Conveyor_Timeout","","Bit high when Conveyor Timeout timer active"
+"C90","HBW_XY_PID_EN","","Enables PID control in HBW_Move_XZ"
+"C101","HBW_T1_Send","Modbus MC101","Task to deliver a pallet to conveyor"
+"C102","HBW_T2_Receive","Modbus MC102","Task to pickup a pallet from conveyor"
+"C103","HBW_T3_Reset","Modbus MC103","Reinitialize and home all axises"
+"C104","HBW_T4_Manual","Modbus MC104","Switch to manual mode"
+"C110","HBW_Move_X_L","Modbus MC110","Move Horizontal Axis towards bay"
+"C111","HBW_Move_X_R","Modbus MC111","Move Horizontal Axis towards Conveyor"
+"C112","HBW_Move_Y_In","Modbus MC112","Move Cantilever In"
+"C113","HBW_Move_Y_Out","Modbus MC113","Move Cantilever Out"
+"C114","HBW_Move_Z_Up","Modbus MC114","Move Vertical Axis Up"
+"C115","HBW_Move_Z_Down","Modbus MC115","Move Vertical Axis Down"
+"C116","HBW_Conveyor_In","Modbus MC116","Move Conveyor In"
+"C117","HBW_Conveyor_Out","Modbus MC117","Move Conveyor Out"
+"C130","HBW_Status_Ready","Modbus MC130","On when ready for a task"
+"C133","HBW_Mov_Conveyor","Modbus MC133","Status Conveyor Moving"
+"C134","HBW_Moving_X","Modbus MC134","Status GantryMovingX"
+"C135","HBW_Moving_Y","Modbus MC135","Status GantryMovingY"
+"C136","HBW_Moving_Z","Modbus MC136","Status GantryMovingZ"
+"C138","HBW_Status_Y_Pos","Modbus MC138","Current Y position"
+"C141","HBW_Target_Y_Pos","Modbus MC141","Target Y position"
+"C150","HBW_MoveComplete","","HBW_Move_XZ completion interlock."
+"C180","HBW_Fault","Modbus MC180","Status in Fault State"
+"C182","Fault_X_Target","","Active when X target out of range"
+"C183","Fault_Z_target","","Active when Z target out of range"
+"C400","VGR_T0","",""
+"C410","VGR_T1","",""
+"C420","VGR_T2","",""
+"C430","VGR_T3","",""
+"C440","VGR_T4","",""
+"C500","VGR_Man_Control","",""
+"C799","VGR_RESET","",""
+"V105","HBW_Task_X_slot","Modbus MHR105","Value for slot X coord"
+"V106","HBW_Task_Y_slot","Modbus MHR106","Value for slot y coord"
+"V118","HBW_PWM_Set_X","Modbus MHR118","Set Horizontal Axis PWM Duty Cycle %"
+"V119","HBW_PWM_Set_Y","Modbus MHR119","Set Cantilever Axis PWM Duty Cycle %"
+"V120","HBW_PWM_Set_Z","Modbus MHR120","Set Vertical Axis PWM Duty cycle %"
+"V131","HBW_Cur_Progress","Modbus MHR131","0 to 100 percent job completion"
+"V132","HBW_Cur_Stage","Modbus MHR132","Current stage number"
+"V137","HBW_Status_X_Pos","Modbus MHR137","Current X encoder position"
+"V139","HBW_Status_Z_Pos","Modbus MHR139","Current Z encoder position"
+"V140","HBW_Target_X_Pos","Modbus MHR140","Target X encoder position"
+"V142","HBW_Target_Z_Pos","Modbus MHR142","Target Z encoder position"
+"V181","HBW_Fault_code","Modbus MHR181","Current Fault code"
+"V801","VGR_Fault_Code","",""
+"N810","VGR_Rot_Target","",""
+"N811","VGR_X_Target","",""
+"N812","VGR_Y_Target","",""
+"D0","MC","",""
+"D140","X_Start_Position","","Distance to target"
+"D142","Y_Start_Position","","Distance to target"
+"D143","HBW_PWM_Cur_X","","PWM value for X for XZ movement task"
+"D144","HBW_PWM_Cur_Z","","PWM value for Z for XZ movement task"
+"T3","T_HBW_S6","",""
+"T4","T_Conveyor_Timer","","Used to detect conveyor faults"
+"US0","_CP_Strogram_A","","CP_State_Program"
+"US1","_VGR_Movement","","VGR_Movement"
+"US2","_SSC_Check_InOut","","SSC_Check_InOut"
+"UB0","_VGR_MisScan_A","","VGR_Movement.DoneThisScan"
+#END
+

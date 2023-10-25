@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<DSP_PANE_SECTION>
+		<Summary Panes="6" TopContainer="3" Client="5"/>
+		<Pane-1 Type="0" DockingCX="255" DockingCY="200" Title="Project Browser\n\n" ID="6852" DockingHolder="4" LastHolder="4"/>
+		<Pane-2 Type="0" DockingCX="240" DockingCY="286" Title="Instruction Toolbox\n\n" ID="4381" DockingHolder="6" LastHolder="6"/>
+		<Pane-3 Type="2" Horiz="1" Panes="3" Pane-1="4" Pane-2="5" Pane-3="6"/>
+		<Pane-4 Type="1" DockingCX="255" DockingCY="200" Panes="1" Selected="1" Pane-1="1"/>
+		<Pane-5 Type="4" DockingCX="1033"/>
+		<Pane-6 Type="1" DockingCX="240" DockingCY="286" Panes="1" Selected="2" Pane-1="2"/>
+	</DSP_PANE_SECTION>
+</DockingPaneLayouts>
